@@ -1,18 +1,11 @@
-# **Build your portfolio with Once UI's Magic Portfolio**
+# **My Portfolio
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
-
-**1. Clone the repository**
-```
-git clone https://github.com/once-ui-system/magic-portfolio.git
-```
-
-**2. Install dependencies**
+**1. Install dependencies**
 ```
 npm install
 ```
 
-**3. Run dev server**
+**2. Run dev server**
 ```
 npm run dev
 ```
