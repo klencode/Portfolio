@@ -1,4 +1,4 @@
-# ** My Portfolio
+# **My Portfolio**
 
 **1. Install dependencies**
 ```
