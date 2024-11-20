@@ -2,15 +2,15 @@ import { InlineCode } from "@/once-ui/components";
 
 const createI18nContent = (t) => {
     const person = {
-        firstName: 'Selene',
-        lastName:  'Yu',
+        firstName: 'Klenam',
+        lastName:  'Chris',
         get name() {
             return `${this.firstName} ${this.lastName}`;
         },
         role:      t("person.role"),
-        avatar:    '/images/avatar.jpg',
-        location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+        avatar:    '/images/myseconduglypic.jpg',
+        location:  'Accra - Ghana',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+        languages: ['English', 'French', 'Spanish']  // optional: Leave the array empty if you don't want to display languages
     }
 
     const newsletter = {
@@ -25,22 +25,22 @@ const createI18nContent = (t) => {
         {
             name: 'GitHub',
             icon: 'github',
-            link: 'https://github.com/once-ui-system/nextjs-starter',
+            link: 'https://github.com/klen_code',
         },
-        {
-            name: 'LinkedIn',
-            icon: 'linkedin',
-            link: 'https://www.linkedin.com/company/once-ui/',
-        },
+        // {
+        //     name: 'LinkedIn',
+        //     icon: 'linkedin',
+        //     link: 'https://www.linkedin.com/company/once-ui/',
+        // },
         {
             name: 'X',
             icon: 'x',
-            link: '',
+            link: 'https://twitter.com/KlenamChris',
         },
         {
             name: 'Email',
             icon: 'email',
-            link: 'mailto:example@gmail.com',
+            link: 'mailto:klenam.chris24@gmail.com',
         },
     ]
 
@@ -63,17 +63,17 @@ const createI18nContent = (t) => {
         avatar: {
             display: true
         },
-        calendar: {
-            display: true,
-            link: 'https://cal.com'
-        },
+        // calendar: {
+        //     display: true,
+        //     link: 'https://cal.com'
+        // },
         intro: {
             display: true,
             title: t("about.intro.title"),
             description: <>{t("about.intro.description")}</>
         },
         work: {
-            display: true, // set to false to hide this section
+            display: false, // set to false to hide this section
             title: t("about.work.title"),
             experiences: [
                 {
@@ -104,17 +104,17 @@ const createI18nContent = (t) => {
             title: 'Studies',
             institutions: [
                 {
-                    name: 'University of Jakarta',
+                    name: 'Ghana Communication Technology University',
                     description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
                 },
-                {
-                    name: 'Build the Future',
-                    description: <>{t("about.studies.institutions.Build the Future.description")}</>,
-                }
+                // {
+                //     name: 'Build the Future',
+                //     description: <>{t("about.studies.institutions.Build the Future.description")}</>,
+                // }
             ]
         },
         technical: {
-            display: true, // set to false to hide this section
+            display: false, // set to false to hide this section
             title: t("about.technical.title"),
             skills: [
                 {

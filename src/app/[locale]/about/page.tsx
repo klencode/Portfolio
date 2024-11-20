@@ -144,8 +144,8 @@ export default function About(
                         fillWidth minHeight="160"
                         direction="column" justifyContent="center"
                         marginBottom="32">
-                        {about.calendar.display && (
-                            <Flex
+                        {/* {about.calendar.display && ( */}
+                            {/* <Flex
                                 className={styles.blockAlign}
                                 style={{
                                     backdropFilter: 'blur(var(--static-space-1))',
@@ -165,12 +165,12 @@ export default function About(
                                     Schedule a call
                                 </Flex>
                                 <IconButton
-                                    href={about.calendar.link}
+                                    // href={about.calendar.link}
                                     data-border="rounded"
                                     variant="tertiary"
                                     icon="chevronRight"/>
                             </Flex>
-                        )}
+                        )} */}
                         <Heading
                             className={styles.textAlign}
                             variant="display-strong-xl">

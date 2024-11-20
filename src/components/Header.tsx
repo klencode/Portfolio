@@ -22,25 +22,25 @@ type TimeDisplayProps = {
 const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' }) => {
     const [currentTime, setCurrentTime] = useState('');
 
-    useEffect(() => {
-        const updateTime = () => {
-            const now = new Date();
-            const options: Intl.DateTimeFormatOptions = {
-                timeZone,
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit',
-                hour12: false,
-            };
-            const timeString = new Intl.DateTimeFormat(locale, options).format(now);
-            setCurrentTime(timeString);
-        };
+    // useEffect(() => {
+    //     // const updateTime = () => {
+    //     //     const now = new Date();
+    //     //     const options: Intl.DateTimeFormatOptions = {
+    //     //         timeZone,
+    //     //         hour: '2-digit',
+    //     //         minute: '2-digit',
+    //     //         second: '2-digit',
+    //     //         hour12: false,
+    //     //     };
+    //     //     const timeString = new Intl.DateTimeFormat(locale, options).format(now);
+    //     //     setCurrentTime(timeString);
+    //     // };
 
-        updateTime();
-        const intervalId = setInterval(updateTime, 1000);
+    //     updateTime();
+    //     const intervalId = setInterval(updateTime, 1000);
 
-        return () => clearInterval(intervalId);
-    }, [timeZone, locale]);
+    //     return () => clearInterval(intervalId);
+    // }, [timeZone, locale]);
 
     return (
         <>
@@ -83,7 +83,7 @@ export const Header = () => {
                 alignItems="center"
                 textVariant="body-default-s">
                 { display.location && (
-                    <>{person.location}</>
+                    <>{person.name}</>
                 )}
             </Flex>
             <Flex
@@ -117,22 +117,22 @@ export const Header = () => {
                             <Flex paddingX="2" hide="s">{work.label}</Flex>
                         </ToggleButton>
                     )}
-                    { routes['/blog'] && (
+                    {/* { routes['/blog'] && (
                         <ToggleButton
                             prefixIcon="book"
                             href={`/${params?.locale}/blog`}
                             selected={pathname.startsWith('/blog')}>
                             <Flex paddingX="2" hide="s">{blog.label}</Flex>
                         </ToggleButton>
-                    )}
-                    { routes['/gallery'] && (
+                    )} */}
+                    {/* { routes['/gallery'] && (
                         <ToggleButton
                             prefixIcon="gallery"
                             href={`/${params?.locale}/gallery`}
                             selected={pathname.startsWith('/gallery')}>
                             <Flex paddingX="2" hide="s">{gallery.label}</Flex>
                         </ToggleButton>
-                    )}
+                    )} */}
                 </Flex>
             </Flex>
             <Flex
