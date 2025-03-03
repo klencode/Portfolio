@@ -32,7 +32,7 @@ import {
 	FaDiscord,
 	FaGithub,
 	FaLinkedin,
-	FaXTwitter
+	FaXTwitter,
 } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {

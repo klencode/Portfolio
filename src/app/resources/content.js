@@ -37,11 +37,6 @@ const social = [
         link: 'https://twitter.com/KlenamChris',
     },
     {
-        name: 'Instagram',
-        icon: 'instagram',
-        link: 'https://instagram.com/klenam_chris',
-    },
-    {
         name: 'Email',
         icon: 'email',
         link: 'mailto:klenam.chris24@gmail.com',
@@ -74,7 +69,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Klenam is a Ghana-based software developer focused on crafting clear and intuitive code. His goal is to eliminate jargon and enhance accessibility, making technology easier for everyone to understand and use.</>
+        description: <>I am a Ghana-based software developer focused on crafting clear and intuitive code. My goal is to eliminate jargon and enhance accessibility, making technology easier for everyone to understand and use.</>
     },
     work: {
         display: true, // set to false to hide this section
@@ -128,6 +123,14 @@ const about = {
                     <>Implemented appropriate computer networks for robust and secure communication and data transfer.</>,
                     <>Excellent Conversationalist</>,
                     <>Maintained clean, neat and operational facilities.</>
+                ],
+                images: [
+                    {
+                        src: '',
+                        alt: '',
+                        width: 0,
+                        height: 0
+                    }
                 ]
             },
             // {
