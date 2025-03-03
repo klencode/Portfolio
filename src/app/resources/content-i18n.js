@@ -107,10 +107,10 @@ const createI18nContent = (t) => {
                     name: 'Ghana Communication Technology University',
                     description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
                 },
-                // {
-                //     name: 'Build the Future',
-                //     description: <>{t("about.studies.institutions.Build the Future.description")}</>,
-                // }
+                {
+                    name: 'ALX Ghana',
+                    description: <>{t("about.studies.institutions.Build the Future.description")}</>,
+                }
             ]
         },
         technical: {

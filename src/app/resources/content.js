@@ -9,7 +9,7 @@ const person = {
     role:      'Software Engineer',
     avatar:    '/images/thisisme.jpg',
     location:  'Accra - Ghana',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'French', 'Spanish']  // optional: Leave the array empty if you don't want to display languages
+    languages: ['English', 'French', 'Spanish', 'Japanese']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -26,21 +26,21 @@ const social = [
         icon: 'github',
         link: 'https://github.com/klencode',
     },
-    // {
-    //     name: 'LinkedIn',
-    //     icon: 'linkedin',
-    //     link: 'https://www.linkedin.com/company/once-ui/',
-    // },
+    {
+        name: 'LinkedIn',
+        icon: 'linkedin',
+        link: 'https://www.linkedin.com/in/klenam-chris/',
+    },
     {
         name: 'X',
         icon: 'x',
         link: 'https://twitter.com/KlenamChris',
     },
-    // {
-    //     name: 'Instagram',
-    //     icon: 'instagram',
-    //     link: 'https://instagram.com/klenam_chris',
-    // },
+    {
+        name: 'Instagram',
+        icon: 'instagram',
+        link: 'https://instagram.com/klenam_chris',
+    },
     {
         name: 'Email',
         icon: 'email',
@@ -54,7 +54,6 @@ const home = {
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Software Developer</>,
     subline: <>I'm Klenam, a software developer dedicated to writing clear, <br/>accessible code that prioritizes simplicity and ease of understanding.</>
-    // subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
 }
 
 const about = {
@@ -76,14 +75,13 @@ const about = {
         display: true,
         title: 'Introduction',
         description: <>Klenam is a Ghana-based software developer focused on crafting clear and intuitive code. His goal is to eliminate jargon and enhance accessibility, making technology easier for everyone to understand and use.</>
-        // description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'mv8',
+                company: 'Tech Company',
                 timeframe: '2022 - Present',
                 role: 'Backend Developer',
                 achievements: [
@@ -94,22 +92,52 @@ const about = {
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
                         src: '/images/projects/project-01/movieRecSys.png',
-                        alt: 'Once UI Project',
+                        alt: 'MovieRecSys Project',
                         width: 16,
                         height: 9
                     }
                 ]
             },
             {
-                company: '1957 Cocoa & 1957 Chocolates',
-                timeframe: '2018 - 2022',
+                company: 'Freelance',
+                timeframe: '2018 - current',
                 role: 'Web Developer',
                 achievements: [
                     <>Developed an extraordinarily responsive website, improving design consistency and company exposure by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>,
+                    <>Built and managed websites for startup companies (e.g. kaddyventures.com, afaefmining.com, ronormotors.com, 1957cocoa.com, 1957chocolates.com, nancyaddy.netlify.app)</>,
+                    <>Built a responsive portfolio website using NextJS + TailwindCSS (klenam-chris.vercel.app).</>,
+                    <>Currently working on a project that will be released in the next quarter.</>,
                 ],
-                images: []
-            }
+                images: [
+                    {
+                        src: '/images/projects/project-01/kaddyventures.png',
+                        alt: 'Kaddy Ventures',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+            {
+                company: '37 Military Hospital',
+                timeframe: '09/2023',
+                role: 'IT Support | Intern',
+                achievements: [
+                    <>Troubleshot and resolved 30+ IT-related issues within the hospital's network, ensuring uninterrupted patient care and data security.</>,
+                    <>Collaborated with the IT team to implement a new network infrastructure, resulting in a 25% reduction in network downtime.</>,
+                    <>Implemented appropriate computer networks for robust and secure communication and data transfer.</>,
+                    <>Excellent Conversationalist</>,
+                    <>Maintained clean, neat and operational facilities.</>
+                ]
+            },
+            // {
+            //     company: 'Judicial Service, Ghana',
+            //     timeframe: '02/2025',
+            //     role: 'Network Admin | Intern',
+            //     achievements: [
+
+            //     ]
+            // }
         ]
     },
     studies: {
@@ -120,10 +148,14 @@ const about = {
                 name: 'Ghana Communication Technology University',
                 description: <>Studied Information Technology (Diploma & Bachelors Degree).</>,
             },
-            // {
-            //     name: 'Build the Future',
-            //     description: <>Studied online marketing and personal branding.</>,
-            // }
+            {
+                name: 'ALX Ghana',
+                description: <>Studied AI Career Essentials.</>,
+            },
+            {
+                name: "Havard University's CS50",
+                description: <>Studied Python Programming Language</>,
+            }
         ]
     },
     technical: {
@@ -131,8 +163,8 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Payment Gateway | Python Django',
+                description: <>Developed a payment gateway using Python's Django framework for a car deakership (ronormotors.com)</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-02.jpg',
